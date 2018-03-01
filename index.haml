@@ -15,8 +15,8 @@
 		%link{rel:"stylesheet", href:"css/styles.css"}/
 		%title Roberto Gervacio
 	%body
-		#home.block.blue
-			%nav.pushpin-demo-nav{data:{target:"home"}}
+		#home.block
+			%nav.pushpin-demo-nav.blue-cool{data:{target:"home"}}
 				.nav-wrapper.container
 					%ul.left
 						%li
@@ -34,8 +34,9 @@
 							%a.to-projects{:href => "#projects"} Proyectos
 						%li
 							%a.to-contact{:href => "#contact"} Contacto
-		#about.block.red
-			%nav.pushpin-demo-nav{data:{target:"about"}}
+			#particles-js
+		#about.block
+			%nav.pushpin-demo-nav.blue-cool{data:{target:"about"}}
 				.nav-wrapper.container
 					%i.icon-size.fa.fa-user
 					%a.brand-logo{:href => "#"} Sobre mi
@@ -48,8 +49,8 @@
 							%a.to-projects{:href => "#projects"} Proyectos
 						%li
 							%a.to-contact{:href => "#contact"} Contacto
-		#skills.block.green
-			%nav.pushpin-demo-nav{data:{target:"skills"}}
+		#skills.block
+			%nav.pushpin-demo-nav.blue-cool{data:{target:"skills"}}
 				.nav-wrapper.container
 					%i.icon-size.fa.fa-puzzle-piece
 					%a.brand-logo{:href => "#"} Habilidades
@@ -62,8 +63,8 @@
 							%a.to-projects{:href => "#projects"} Proyectos
 						%li
 							%a.to-contact{:href => "#contact"} Contacto
-		#projects.block.yellow
-			%nav.pushpin-demo-nav{data:{target:"projects"}}
+		#projects.block
+			%nav.pushpin-demo-nav.blue-cool{data:{target:"projects"}}
 				.nav-wrapper.container
 					%i.icon-size.fa.fa-folder-open
 					%a.brand-logo{:href => "#"} Proyectos
@@ -76,8 +77,8 @@
 							%a.to-skills{:href => "#skills"} Habilidades
 						%li
 							%a.to-contact{:href => "#contact"} Contacto
-		#contact.block.purple
-			%nav.pushpin-demo-nav{data:{target:"contact"}}
+		#contact.block
+			%nav.pushpin-demo-nav.blue-cool{data:{target:"contact"}}
 				.nav-wrapper.container
 					%i.icon-size.fa.fa-whatsapp
 					%a.brand-logo{:href => "#"} Contacto
@@ -93,4 +94,5 @@
 	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js"}
 	%script{type:"text/javascript", src:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
 	%script{type:"text/javascript", src:"js/main.js"}
-	-#%script{src:"http://jnicol.github.io/particleground/js/jquery.particleground.js"}
+	%script{type:"text/javascript", src:"https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"}
+	%script{type:"text/javascript",src:"js/particles.js"}

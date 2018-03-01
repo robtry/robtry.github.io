@@ -16,7 +16,7 @@ position: relative;
 .pinned {
 position: fixed !important;
 }
-  
+
 .brand-logo{
 	font-weight: 500;
 	letter-spacing: 3px;
@@ -28,6 +28,15 @@ position: fixed !important;
 	font-size: 2.3em;
 }
 
+.blue-cool{
+	background-color: #3367D6;
+}
+
+#particles-js{
+	width: 100%;
+	height: 100%;
+	background: rgba(34, 77, 170,0.9);
+}
 @media only screen and (max-width: 992px){
 	.name-size
 	{
