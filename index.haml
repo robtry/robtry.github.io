@@ -16,7 +16,7 @@
 		%title Roberto Gervacio
 	%body
 		#home.block
-			%nav.pushpin-demo-nav.blue-cool{data:{target:"home"}}
+			%nav.pushpin-demo-nav.no-color{data:{target:"home"}}
 				.nav-wrapper.container
 					%ul.left
 						%li
@@ -24,7 +24,7 @@
 						%li.hide-on-small-only
 							%a.icon-size{:href => "!#"} <i class="fa fa-facebook"></i>
 						%li
-							%a.name-size.brand-logo{:href => "#home"} Roberto
+							.name-size.brand-logo Roberto
 					%ul.right.hide-on-med-and-down#nav-mobile-1
 						%li
 							%a.to-about{:href => "#about"} Sobre mi
@@ -34,7 +34,11 @@
 							%a.to-projects{:href => "#projects"} Proyectos
 						%li
 							%a.to-contact{:href => "#contact"} Contacto
-			#particles-js
+			#particles
+				%h1#intro-title Roberto
+				%p#intro-paragraph.flow-text ¡Hola! mi nombre es Roberto Gervacio, futuro Ingeniero en Tecnologías de Cómputo. Tengo algunos proyectos que puedes revisar
+				%br/
+				
 		#about.block
 			%nav.pushpin-demo-nav.blue-cool{data:{target:"about"}}
 				.nav-wrapper.container
@@ -94,5 +98,5 @@
 	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js"}
 	%script{type:"text/javascript", src:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
 	%script{type:"text/javascript", src:"js/main.js"}
-	%script{type:"text/javascript", src:"https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"}
+	%script{type:"text/javascript", src:"http://jnicol.github.io/particleground/js/jquery.particleground.js"}
 	%script{type:"text/javascript",src:"js/particles.js"}

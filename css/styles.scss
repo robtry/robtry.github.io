@@ -1,5 +1,5 @@
 html, body, .block {
-    height: 100%;
+	height: 100%;
  }
 
 // Class for when element is above threshold
@@ -29,13 +29,42 @@ position: fixed !important;
 }
 
 .blue-cool{
-	background-color: #3367D6;
+	background-color: #222;
+}
+.no-color{
+	background: rgba(34, 34, 34,0.7);
 }
 
-#particles-js{
+#particles {
 	width: 100%;
 	height: 100%;
-	background: rgba(34, 77, 170,0.9);
+	overflow: hidden;
+	//position: relative;
+	background:  rgba(34, 77, 170,0.9);
+}
+
+#intro-title {
+	left: 50%;
+	position: absolute;
+	top: 20%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-weight: 300;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#intro-paragraph {
+	left: 50%;
+	position: absolute;
+	top: 37%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color : white;
+	font-weight: 100;
 }
 @media only screen and (max-width: 992px){
 	.name-size
