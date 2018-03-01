@@ -1,0 +1,36 @@
+html, body, .block {
+    height: 100%;
+ }
+
+// Class for when element is above threshold
+.pin-top {
+position: relative;
+}
+
+// Class for when element is below threshold
+.pin-bottom {
+position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+position: fixed !important;
+}
+  
+.brand-logo{
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-left: 15px;
+}
+
+.icon-size{
+	font-size: 2.3em;
+}
+
+@media only screen and (max-width: 992px){
+	.name-size
+	{
+		//margin: 50% auto;
+	}
+}

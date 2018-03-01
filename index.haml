@@ -9,12 +9,88 @@
 		%meta{content:"Roberto Gervacio", name:"owner"}
 		%meta{content:"index/follow", name:"robots"}
 		%meta{name:"theme-color", content:"#2E5EC6"}
-		%link{rel:"shortcut icon", type:"image/x-icon", href:"images/favicon.ico"}/
-		%link{rel:"stylesheet", href:"css/materialize.css", media: "screen,projection"}/		
+		-#%link{rel:"shortcut icon", type:"image/x-icon", href:"images/favicon.ico"}/
+		%link{rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css", media: "screen,projection"}/
+		%link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}/
 		%link{rel:"stylesheet", href:"css/styles.css"}/
 		%title Roberto Gervacio
 	%body
-
-	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js",integrity:"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",crossorigin:"anonymous"}
+		#home.block.blue
+			%nav.pushpin-demo-nav{data:{target:"home"}}
+				.nav-wrapper.container
+					%ul.left
+						%li
+							%a.icon-size{:href => "!#"} <i class="fa fa-github"></i>
+						%li.hide-on-small-only
+							%a.icon-size{:href => "!#"} <i class="fa fa-facebook"></i>
+						%li
+							%a.name-size.brand-logo{:href => "#home"} Roberto
+					%ul.right.hide-on-med-and-down#nav-mobile-1
+						%li
+							%a{:href => "#about"} Sobre mi
+						%li
+							%a{:href => "#skills"} Habilidades
+						%li
+							%a{:href => "#projects"} Proyectos
+						%li
+							%a{:href => "#contact"} Contacto
+		#about.block.red
+			%nav.pushpin-demo-nav{data:{target:"about"}}
+				.nav-wrapper.container
+					%i.icon-size.fa.fa-user
+					%a.brand-logo{:href => "#"} Sobre mi
+					%ul.right.hide-on-med-and-down#nav-mobile-2
+						%li
+							%a{:href => "#home"} Inicio
+						%li
+							%a{:href => "#skills"} Habilidades
+						%li
+							%a{:href => "#projects"} Proyectos
+						%li
+							%a{:href => "#contact"} Contacto
+		#skills.block.green
+			%nav.pushpin-demo-nav{data:{target:"skills"}}
+				.nav-wrapper.container
+					%i.icon-size.fa.fa-puzzle-piece
+					%a.brand-logo{:href => "#"} Habilidades
+					%ul.right.hide-on-med-and-down#nav-mobile-2
+						%li
+							%a{:href => "#home"} Inicio
+						%li
+							%a{:href => "#about"} Sobre mi
+						%li
+							%a{:href => "#projects"} Proyectos
+						%li
+							%a{:href => "#contact"} Contacto
+		#projects.block.yellow
+			%nav.pushpin-demo-nav{data:{target:"projects"}}
+				.nav-wrapper.container
+					%i.icon-size.fa.fa-folder-open
+					%a.brand-logo{:href => "#"} Proyectos
+					%ul.right.hide-on-med-and-down#nav-mobile-2
+						%li
+							%a{:href => "#home"} Inicio
+						%li
+							%a{:href => "#about"} Sobre mi
+						%li
+							%a{:href => "#skills"} Habilidades
+						%li
+							%a{:href => "#contact"} Contacto
+		#contact.block.purple
+			%nav.pushpin-demo-nav{data:{target:"contact"}}
+				.nav-wrapper.container
+					%i.icon-size.fa.fa-whatsapp
+					%a.brand-logo{:href => "#"} Contacto
+					%ul.right.hide-on-med-and-down#nav-mobile-2
+						%li
+							%a{:href => "#home"} Inicio
+						%li
+							%a{:href => "#about"} Sobre mi
+						%li
+							%a{:href => "#skills"} Habilidades
+						%li
+							%a{:href => "#projects"} Proyectos
+	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js"}
+	%script{type:"text/javascript", src:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
+	%script{type:"text/javascript", src:"js/main.js"}
 	-#%script{src:"http://jnicol.github.io/particleground/js/jquery.particleground.js"}
-	%script{type:"text/javascript", src:"js/materialize.js"}
