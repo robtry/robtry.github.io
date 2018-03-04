@@ -37,13 +37,13 @@ nav
 	height: 100%;
 	overflow: hidden;
 	//position: relative;
-	background:  rgba(34, 77, 170,0.9);
+	background:  rgba(34, 77, 170,0.9); // color fondo de las particulas
 }
 
 #intro-title {
 	left: 50%;
 	position: absolute;
-	top: 3.5em;
+	top: 30%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -54,36 +54,49 @@ nav
 }
 
 #intro-paragraph {
+	display: none;
 	left: 50%;
 	position: absolute;
-	top: 15em;
+	top: 57%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	color : white;
 	font-weight: 200;
-	padding: 1% 2em 0.2em 2em;
-	background-color: rgba(34, 34, 34,0.7);
+	padding: 4em;
+	background-color: rgba(34, 34, 34,0.7); // color del fondo de about
 }
 
-@media only screen and (max-width: 860px){
+/*===========height===========*/
+@media only screen and (max-height: 850px){
 	#intro-paragraph {
-		padding: .5em;
-		top: 15em;
-	}
-	#intro-title {
-		top:2.8em;
+		padding: 2.2em;
 	}
 }
 
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-height: 580px){
 	#intro-paragraph {
-		left: 40%;
-		top: 16.8em;
+		padding: 1.2em !important;
+		top: 60%;
 	}
 	#intro-title {
-		top:3em;
+		top: 35%;
+	}
+}
+/*===========WIDTH===========*/
+@media only screen and (max-width: 920px){
+	#intro-paragraph {
+		padding: 2.2em;
+	}
+}
+
+@media only screen and (max-width: 580px){
+	#intro-paragraph {
+		padding: 1.2em;
+		left: 10%;
+		-webkit-transform: translate(-3%, -50%);
+		-moz-transform: translate(-3%, -50%);
+		transform: translate(-3%, -50%);
 	}
 }
 

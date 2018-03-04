@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$('#intro-paragraph').slideDown('slow');
+
 	$(window).scroll(function() {
 		indexParticles ();
 		//parallaxScroll();
