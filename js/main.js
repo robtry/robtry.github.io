@@ -1,23 +1,23 @@
 $(document).ready(function(){
-	$('.target').pushpin({
-		top: 0,
-		bottom: 1000,
-		offset: 0
-	});
-	$('.pushpin-demo-nav').each(function() {
-		var $this = $(this);
-		var $target = $('#' + $(this).attr('data-target'));
-		$this.pushpin({
-			top: $target.offset().top,
-			bottom: $target.offset().top + $target.outerHeight() - $this.height()
-		});
+	$(window).scroll(function() {
+		indexParticles ();
+		//parallaxScroll();
 	});
 
+	function indexParticles () {
+		var alt = $("#particles").height() - $("nav").height();
+		if ($(window).scrollTop() < alt) {
+			$("#particles").removeClass("particles-pinned");
+			$("#particles").addClass("mask");
+		}
+		else {
+			$("#particles").addClass("particles-pinned");
+			$("#particles").removeClass("mask");
+		}
+	};
+	/*==========Animated Scroll==========*/
 	$(".to-home").click(function(){
 		$("html, body").animate({ scrollTop: $('#home').offset().top }, 800);
-	});
-	$(".to-about").click(function(){
-		$("html, body").animate({ scrollTop: $('#about').offset().top }, 800);
 	});
 	$(".to-skills").click(function(){
 		$("html, body").animate({ scrollTop: $('#skills').offset().top }, 800);
@@ -28,4 +28,5 @@ $(document).ready(function(){
 	$(".to-contact").click(function(){
 		$("html, body").animate({ scrollTop: $('#contact').offset().top }, 800);
 	});
+	/*=================================*/
 });

@@ -1,20 +1,5 @@
 html, body, .block {
 	height: 100%;
- }
-
-// Class for when element is above threshold
-.pin-top {
-position: relative;
-}
-
-// Class for when element is below threshold
-.pin-bottom {
-position: relative;
-}
-
-// Class for when element is pinned
-.pinned {
-position: fixed !important;
 }
 
 .brand-logo{
@@ -28,13 +13,25 @@ position: fixed !important;
 	font-size: 2.3em;
 }
 
-.blue-cool{
-	background-color: #222;
+nav
+{
+	background: transparent;
+	position: fixed;
+	top: 0;
+	z-index: 30;
+	box-shadow: none;
 }
-.no-color{
-	background: rgba(34, 34, 34,0.7);
+.particles-main
+{
+	width: 100vw;
+	height: 100vh;
 }
-
+.particles-pinned
+{
+	position: fixed !important;
+	top: calc(-100vh + 64px) !important;
+	bottom: initial !important;
+}
 #particles {
 	width: 100%;
 	height: 100%;
@@ -46,7 +43,7 @@ position: fixed !important;
 #intro-title {
 	left: 50%;
 	position: absolute;
-	top: 20%;
+	top: 3.5em;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -59,16 +56,39 @@ position: fixed !important;
 #intro-paragraph {
 	left: 50%;
 	position: absolute;
-	top: 37%;
+	top: 15em;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	color : white;
-	font-weight: 100;
+	font-weight: 200;
+	padding: 1% 2em 0.2em 2em;
+	background-color: rgba(34, 34, 34,0.7);
 }
-@media only screen and (max-width: 992px){
-	.name-size
-	{
-		//margin: 50% auto;
+
+@media only screen and (max-width: 860px){
+	#intro-paragraph {
+		padding: .5em;
+		top: 15em;
+	}
+	#intro-title {
+		top:2.8em;
+	}
+}
+
+
+@media only screen and (max-width: 500px){
+	#intro-paragraph {
+		left: 40%;
+		top: 16.8em;
+	}
+	#intro-title {
+		top:3em;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	#intro-title {
+		font-size: 3em;
 	}
 }

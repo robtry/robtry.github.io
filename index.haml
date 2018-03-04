@@ -16,85 +16,29 @@
 		%title Roberto Gervacio
 	%body
 		#home.block
-			%nav.pushpin-demo-nav.no-color{data:{target:"home"}}
+			%nav
 				.nav-wrapper.container
 					%ul.left
 						%li
 							%a.icon-size{:href => "!#"} <i class="fa fa-github"></i>
-						%li.hide-on-small-only
-							%a.icon-size{:href => "!#"} <i class="fa fa-facebook"></i>
 						%li
-							.name-size.brand-logo Roberto
+							%a.brand-logo.to-home{:href => ""} Roberto
 					%ul.right.hide-on-med-and-down#nav-mobile-1
 						%li
-							%a.to-about{:href => "#about"} Sobre mi
-						%li
 							%a.to-skills{:href => "#skills"} Habilidades
 						%li
 							%a.to-projects{:href => "#projects"} Proyectos
 						%li
 							%a.to-contact{:href => "#contact"} Contacto
-			#particles
+			#particles.particles-main
 				%h1#intro-title Roberto
-				%p#intro-paragraph.flow-text ¡Hola! mi nombre es Roberto Gervacio, futuro Ingeniero en Tecnologías de Cómputo. Tengo algunos proyectos que puedes revisar
-				%br/
-				
-		#about.block
-			%nav.pushpin-demo-nav.blue-cool{data:{target:"about"}}
-				.nav-wrapper.container
-					%i.icon-size.fa.fa-user
-					%a.brand-logo{:href => "#"} Sobre mi
-					%ul.right.hide-on-med-and-down#nav-mobile-2
-						%li
-							%a.to-home{:href => "#home"} Inicio
-						%li
-							%a.to-skills{:href => "#skills"} Habilidades
-						%li
-							%a.to-projects{:href => "#projects"} Proyectos
-						%li
-							%a.to-contact{:href => "#contact"} Contacto
+				%p#intro-paragraph.flow-text ¡Hola! soy Roberto Gervacio, futuro Ingeniero en Tecnologías de Cómputo. Sigo experimentando entre lenguajes de programación, sin embargo, mayormente me gusta programar ideas utiles en Ruby on Rails. Puedes visitar mis proyectos
 		#skills.block
-			%nav.pushpin-demo-nav.blue-cool{data:{target:"skills"}}
-				.nav-wrapper.container
-					%i.icon-size.fa.fa-puzzle-piece
-					%a.brand-logo{:href => "#"} Habilidades
-					%ul.right.hide-on-med-and-down#nav-mobile-2
-						%li
-							%a.to-home{:href => "#home"} Inicio
-						%li
-							%a.to-about{:href => "#about"} Sobre mi
-						%li
-							%a.to-projects{:href => "#projects"} Proyectos
-						%li
-							%a.to-contact{:href => "#contact"} Contacto
+			
 		#projects.block
-			%nav.pushpin-demo-nav.blue-cool{data:{target:"projects"}}
-				.nav-wrapper.container
-					%i.icon-size.fa.fa-folder-open
-					%a.brand-logo{:href => "#"} Proyectos
-					%ul.right.hide-on-med-and-down#nav-mobile-2
-						%li
-							%a.to-home{:href => "#home"} Inicio
-						%li
-							%a.to-about{:href => "#about"} Sobre mi
-						%li
-							%a.to-skills{:href => "#skills"} Habilidades
-						%li
-							%a.to-contact{:href => "#contact"} Contacto
+			
 		#contact.block
-			%nav.pushpin-demo-nav.blue-cool{data:{target:"contact"}}
-				.nav-wrapper.container
-					%i.icon-size.fa.fa-whatsapp
-					%a.brand-logo{:href => "#"} Contacto
-					%ul.right.hide-on-med-and-down#nav-mobile-2
-						%li
-							%a.to-home{:href => "#home"} Inicio
-						%li
-							%a.to-about{:href => "#about"} Sobre mi
-						%li
-							%a.to-skills{:href => "#skills"} Habilidades
-						%li
-							%a.to-projects{:href => "#projects"} Proyectos
+			
 	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js"}
 	%script{type:"text/javascript", src:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
 	%script{type:"text/javascript", src:"js/main.js"}
