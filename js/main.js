@@ -3,7 +3,6 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
 		indexParticles ();
-		//parallaxScroll();
 	});
 
 	function indexParticles () {
@@ -15,22 +14,18 @@ $(document).ready(function(){
 			$("#particles").addClass("particles-pinned");
 		}
 	};
-
-	$(".btn").click(function(){
-		$(this).parent( "p" ).css( "display", "block" );
-	});
 	/*==========Animated Scroll==========*/
 	$(".to-home").click(function(){
-		$("html, body").animate({ scrollTop: $('#home').offset().top }, 800);
+		$("html, body").animate({ scrollTop: $('#home').offset().top }, 950);
 	});
 	$(".to-skills").click(function(){
-		$("html, body").animate({ scrollTop: $('#skills').offset().top }, 800);
+		$("html, body").animate({ scrollTop: $('#skills').offset().top }, 950);
 	});
 	$(".to-projects").click(function(){
-		$("html, body").animate({ scrollTop: $('#projects').offset().top }, 800);
+		$("html, body").animate({ scrollTop: $('#projects').offset().top }, 950);
 	});
 	$(".to-contact").click(function(){
-		$("html, body").animate({ scrollTop: $('#contact').offset().top }, 800);
+		$("html, body").animate({ scrollTop: $('#contact').offset().top }, 950);
 	});
 	/*=================================*/
 });

@@ -111,6 +111,24 @@ nav
 #contact{
 	padding-top: 150px;
 	padding-bottom: 80px;
+	h2
+	{
+		color: rgba(34, 77, 170,1); /// azul de particulas
+		padding-bottom: 60px;
+	}
+	.contact{
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color:rgb(34, 77, 170);
+		a{
+			color: white;
+			margin-left: 10px;
+			font-size: 3em;
+			i{
+				padding: 10px;;
+			}
+		}
+	}
 }
 
 /*===========height===========*/
