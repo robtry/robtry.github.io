@@ -10,13 +10,15 @@ $(document).ready(function(){
 		var alt = $("#particles").height() - $("nav").height();
 		if ($(window).scrollTop() < alt) {
 			$("#particles").removeClass("particles-pinned");
-			$("#particles").addClass("mask");
 		}
 		else {
 			$("#particles").addClass("particles-pinned");
-			$("#particles").removeClass("mask");
 		}
 	};
+
+	$(".btn").click(function(){
+		$(this).parent( "p" ).css( "display", "block" );
+	});
 	/*==========Animated Scroll==========*/
 	$(".to-home").click(function(){
 		$("html, body").animate({ scrollTop: $('#home').offset().top }, 800);

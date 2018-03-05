@@ -39,34 +39,134 @@
 			%br/
 			.container
 				.row.center
-					.col.s4
+					.col.s12.m4.hoverable
 						%i.fa.fa-git-square
 						%h5.truncate Controlador de versiones
-						%p.hide-on-small-only Uso de Git y <a href = "https://github.com/robtry" target = "_blank"> GitHub </a> para trabajar en <b> equipo </b> y tener un control sobre los proyectos.
-					.col.s4
+						%p Uso de Git y <a href = "https://github.com/robtry" target = "_blank"> GitHub </a> para trabajar en <b> equipo </b> y tener un control sobre los proyectos.
+					.col.s12.m4.hoverable
 						%i.fa.fa-code
 						%h5.truncate Código limpio
-						%p.hide-on-small-only Cada proyecto esta escrito con la <b> estantarización </b> y convención de su lenguaje.
-					.col.s4
+						%p Cada proyecto esta escrito con la <b> estantarización </b> y convención de su lenguaje.
+					.col.s12.m4.hoverable
 						%i.fa.fa-laptop
 						%h5.truncate Siempre responsivo
-						%p.hide-on-small-only Diseño web es responsivo, es decir, se <b> adapta </b> a cualquier dispositivo.
-					.col.s4
+						%p Diseño web es responsivo, es decir, se <b> adapta </b> a cualquier dispositivo.
+				.row.center
+					.col.s12.m4.hoverable
 						%i.fa.fa-paint-brush
 						%h5.truncate Diseño armonico
 						%p Cada proyecto es <b> único </b> y adaptado a las necesidades y requerimientos s.
-					.col.s4
+					.col.s12.m4.hoverable
 						%i.fa.fa-server
 						%h5.truncate Universalidad
-						%p.hide-on-small-only Desarrollo para <b> todos </b> los sistemas operativos <i class="fa fa-apple"></i> <i class="fa fa-android"></i> <i class="fa fa-linux"></i> <i class="fa fa-windows"></i>
-					.col.s4
+						%p Desarrollo para <b> todos </b> los sistemas operativos <i class="fa fa-apple"></i> <i class="fa fa-android"></i> <i class="fa fa-linux"></i> <i class="fa fa-windows"></i>
+					.col.s12.m4.hoverable
 						%i.fa.fa-database
 						%h5.truncate Base de Datos
-						%p.hide-on-small-only <b> Gestión </b> de base de datos SQL, adaptando la normalización y persistencia de datos.
+						%p <b> Gestión </b> de base de datos SQL, adaptando la normalización y persistencia de datos.
 		#projects
-			%h2.center Proyectos
+			%h2.center <i class="fa fa-folder-open"></i> Proyectos
+			.container
+				.row.center
+					.col.s12.m3.offset-m3
+						.card
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/gh.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator GliphyHub <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title GliphyHub  <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Ruby on Rails </b>
+								%p Plataforma dedicada al ámbito estudiantil, que mantiene comunicación entre profesores, directivos y alumnos
+					.col.s12.m3
+						.card.waves-effect.waves-teal
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/algorithm.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator Problemas <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title Problemas <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Java, C y C++ </b>
+								%p Solución de algunos problemas de coj y uva
+				.row.center
+					.col.s12.m3
+						.card.waves-effect.waves-teal
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/inmypocket.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator InMyPocket <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title InMyPocket <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Visual Basic </b>
+								%p Interfaz para guardar información sobre los gastos de un hogar, y así tener un control
+					.col.s12.m3
+						.card.waves-effect.waves-teal
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/droncamera.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator DronCam <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title DronCam <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Objective C </b>
+								%p Aplicación para iOS que permite acceder a la cámara de un dron de la marca DJI
+					.col.s12.m3
+						.card.waves-effect.waves-teal
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/w2b.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator W2B <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title W2B <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Ruby on Rails </b>
+								%p Aplicación web para tener un control sobre las cosas que necesitas en un evento.
+					.col.s12.m3
+						.card.waves-effect.waves-teal
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/tablasdeverdad.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator TablaVerdad <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title TablaVerdad <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Java </b>
+								%p Interfaz que genera tabla de verdad a partir de premisas ingresadas
+					.col.s12.m3
+						.card.waves-effect.waves-teal
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/rollaball.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator Roll a ball <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title Roll a ball <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Unity(C#) </b>
+								%p Minijuego consiste en comer cuadritos con una pelotita
+					.col.s12.m3
+						.card.waves-effect.waves-teal
+							.card-image.container.waves-effect.waves-teal
+								%img.activator{:src => "images/nomina.png", :alt => ""}/
+							.card-content
+								%span.card-title.activator MiNómina <i class = "right fa fa-angle-double-up"></i>
+								%p
+									%a{:href => ""} Ver más
+							.card-reveal
+								%span.card-title MiNómina <i class = "right fa fa-angle-double-down"></i>
+								%p Lenguaje: <b> Java </b>
+								%p [Experimental] Interfaz para llevar el control de pagos de nómina
 		#contact
-			%h2.center Contactos
+			%h2.center Contacto
 	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js"}
 	%script{type:"text/javascript", src:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
 	%script{type:"text/javascript", src:"js/main.js"}

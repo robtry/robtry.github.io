@@ -60,12 +60,18 @@ nav {
   padding: 4em;
   background-color: rgba(34, 34, 34, 0.7); }
 
+.card {
+  color: black; }
+
+.hidden {
+  display: none; }
+
 #skills {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 90px; }
   #skills h2 {
     font-size: 4.2rem;
-    color: rgba(34, 77, 170, 0.9); }
+    color: #224daa; }
   #skills .col i {
     font-size: 5em; }
   #skills .col h5 {
@@ -78,11 +84,14 @@ nav {
       color: rgba(34, 77, 170, 0.9); }
 
 #projects {
-  background: rgba(34, 77, 170, 0.9);
-  color: white; }
+  background: #224daa;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 80px; }
 
 #contact {
-  padding-top: 150px; }
+  padding-top: 150px;
+  padding-bottom: 80px; }
 
 /*===========height===========*/
 @media only screen and (max-height: 850px) {
