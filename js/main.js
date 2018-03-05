@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#intro-paragraph').slideDown('slow');
+	$('#intro-paragraph').slideDown(900);
 
 	$(window).scroll(function() {
 		indexParticles ();

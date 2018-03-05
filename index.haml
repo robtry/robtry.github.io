@@ -20,7 +20,7 @@
 				.nav-wrapper.container
 					%ul.left
 						%li
-							%a.icon-size{:href => "!#"} <i class="fa fa-github"></i>
+							%a.icon-size-nav{:href => "https://github.com/robtry", :target => "_blank"} <i class="fa fa-github"></i>
 						%li
 							%a.brand-logo.to-home{:href => "#home"} Roberto
 					%ul.right.hide-on-med-and-down#nav-mobile-1
@@ -34,11 +34,39 @@
 				%h1#intro-title Roberto
 				%p#intro-paragraph.flow-text ¡Hola! soy Roberto Gervacio, futuro Ingeniero en Tecnologías de Cómputo. Tengo experiencia en desarrollo Frontend, Backend, de Aplicaciones Nativas y Web. Puedes ver mis proyectos
 		#skills
-			%h1 funciona?
+			%h2.center <i class="fa fa-puzzle-piece"></i> Habilidades
+			%br/
+			%br/
+			.container
+				.row.center
+					.col.s4
+						%i.fa.fa-git-square
+						%h5.truncate Controlador de versiones
+						%p.hide-on-small-only Uso de Git y <a href = "https://github.com/robtry" target = "_blank"> GitHub </a> para trabajar en <b> equipo </b> y tener un control sobre los proyectos.
+					.col.s4
+						%i.fa.fa-code
+						%h5.truncate Código limpio
+						%p.hide-on-small-only Cada proyecto esta escrito con la <b> estantarización </b> y convención de su lenguaje.
+					.col.s4
+						%i.fa.fa-laptop
+						%h5.truncate Siempre responsivo
+						%p.hide-on-small-only Diseño web es responsivo, es decir, se <b> adapta </b> a cualquier dispositivo.
+					.col.s4
+						%i.fa.fa-paint-brush
+						%h5.truncate Diseño armonico
+						%p Cada proyecto es <b> único </b> y adaptado a las necesidades y requerimientos s.
+					.col.s4
+						%i.fa.fa-server
+						%h5.truncate Universalidad
+						%p.hide-on-small-only Desarrollo para <b> todos </b> los sistemas operativos <i class="fa fa-apple"></i> <i class="fa fa-android"></i> <i class="fa fa-linux"></i> <i class="fa fa-windows"></i>
+					.col.s4
+						%i.fa.fa-database
+						%h5.truncate Base de Datos
+						%p.hide-on-small-only <b> Gestión </b> de base de datos SQL, adaptando la normalización y persistencia de datos.
 		#projects
-			%h2 please dime que si
+			%h2.center Proyectos
 		#contact
-			%h3 ahuevo
+			%h2.center Contactos
 	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js"}
 	%script{type:"text/javascript", src:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
 	%script{type:"text/javascript", src:"js/main.js"}
