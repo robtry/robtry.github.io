@@ -28,4 +28,25 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: $('#contact').offset().top }, 950);
 	});
 	/*=================================*/
+	$('.material-card > .mc-btn-action').click(function () {
+		var card = $(this).parent('.material-card');
+		var icon = $(this).children('i');
+		icon.addClass('fa-spin-fast');
+
+		if (card.hasClass('mc-active')) {
+			card.removeClass('mc-active');
+			window.setTimeout(function() { icon.removeClass('fa-spin-fast') }, 800);
+			icon.removeClass('fa-arrow-left');
+			icon.addClass('fa-bars');
+			//console.log("active");
+
+		}
+		else {
+			card.addClass('mc-active');	
+			window.setTimeout(function() { icon.removeClass('fa-spin-fast') }, 800);
+			icon.removeClass('fa-bars');
+			icon.addClass('fa-arrow-left');
+			//console.log("unactive");
+		}
+	});
 });

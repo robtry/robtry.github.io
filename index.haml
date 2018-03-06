@@ -13,7 +13,6 @@
 		%link{rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css", media: "screen,projection"}/
 		%link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}/
 		%link{rel:"stylesheet", href:"css/styles.css"}/
-		%link{:rel => "stylesheet", :href => "css/style-cards.css"}/
 		%title Roberto Gervacio
 	%body
 		#home.block
@@ -36,7 +35,7 @@
 				%h1#intro-title Roberto
 				%p#intro-paragraph.flow-text ¡Hola! soy Roberto Gervacio, futuro Ingeniero en Tecnologías de Cómputo. Tengo experiencia en desarrollo Frontend, Backend, de Aplicaciones Nativas y Web. Puedes ver mis proyectos
 		#skills
-			%h2.center <i class="fa fa-puzzle-piece"></i> Habilidades
+			%h3.center <i class="fa fa-puzzle-piece"></i> Habilidades
 			%br/
 			%br/
 			.container
@@ -67,126 +66,118 @@
 						%h5.truncate Base de Datos
 						%p <b> Gestión </b> de base de datos SQL, adaptando la normalización y persistencia de datos.
 		#projects
-			%h2.center <i class="fa fa-folder-open"></i> Proyectos
+			%h3.center <i class="fa fa-folder-open"></i> Proyectos
+			%br/
+			%br/
 			.container
-				-# .row.center
-				-# 	.col.s12.m6.l4
-				-# 		.team
-				-# 			%article.material-card
-				-# 				%h2.blue
-				-# 					%span.truncate Roberto Gervacio
-				-# 					%strong.truncate.mc-title
-				-# 						%span.trun  FullStack
-				-# 				.mc-content.blue.lighten-1
-				-# 					.img-container
-				-# 						%img.responsive-img.white{src:"images/login/roberto.jpg"}
-				-# 					.mc-description.white-text
-				-# 						%span Futuro ingeniero en tecnologías de cómputo, apasionado por Linux y el código libre
-				-# 				%a.mc-btn-action.blue.lighten-2.z-depth-3.hoverable
-				-# 					%i.material-icons menu
-				-# 				.mc-footer.blue.lighten-3
-				-# 					%a.center-align.blue.lighten-1{href:"https://github.com/robtry", target:"_blank"}
-				-# 						%img{src:"images/login/git.png"}
 				.row.center
-					.col.s12.m3.offset-m3
-						.card
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/gh.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator GliphyHub <i class = "right fa fa-angle-double-up"></i>
-								%p
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate GliphyHub
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/gh.png"}
+									.mc-description
+										%span Lenguaje: <b> Ruby on Rails </b> </br> Plataforma dedicada a la comunicación entre profesores, directivos y alumnos
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
 									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title GliphyHub  <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Ruby on Rails </b>
-								%p Plataforma dedicada al ámbito estudiantil, que mantiene comunicación entre profesores, directivos y alumnos
-					.col.s12.m3
-						.card.waves-effect.waves-teal
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/algorithm.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator Problemas <i class = "right fa fa-angle-double-up"></i>
-								%p
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Problemas
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/algorithm.png"}
+									.mc-description
+										%span Lenguaje: <b> Java, C y C++ </b> </br> Solución de algunos problemas de coj y uva
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
 									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title Problemas <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Java, C y C++ </b>
-								%p Solución de algunos problemas de coj y uva
-				.row.center
-					.col.s12.m3
-						.card.waves-effect.waves-teal
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/inmypocket.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator InMyPocket <i class = "right fa fa-angle-double-up"></i>
-								%p
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate In My Pocket
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/inmypocket.png"}
+									.mc-description
+										%span Lenguaje: <b> Visual Basic </b></br> Interfaz para llevar un presupuesto de gastos en el hogar
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
 									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title InMyPocket <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Visual Basic </b>
-								%p Interfaz para guardar información sobre los gastos de un hogar, y así tener un control
-					.col.s12.m3
-						.card.waves-effect.waves-teal
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/droncamera.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator DronCam <i class = "right fa fa-angle-double-up"></i>
-								%p
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Dron Camera
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/droncamera.png"}
+									.mc-description
+										%span Lenguaje: <b> Objective C </b></br> Aplicación para iOS que permite acceder a la cámara de un dron de la marca DJI
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
 									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title DronCam <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Objective C </b>
-								%p Aplicación para iOS que permite acceder a la cámara de un dron de la marca DJI
-					.col.s12.m3
-						.card.waves-effect.waves-teal
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/w2b.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator W2B <i class = "right fa fa-angle-double-up"></i>
-								%p
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate W2B
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/w2b.png"}
+									.mc-description
+										%span Lenguaje: <b> Ruby on Rails </b></br>Aplicación web para controlar el inventario de un evento cooperativo.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
 									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title W2B <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Ruby on Rails </b>
-								%p Aplicación web para tener un control sobre las cosas que necesitas en un evento.
-					.col.s12.m3
-						.card.waves-effect.waves-teal
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/tablasdeverdad.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator TablaVerdad <i class = "right fa fa-angle-double-up"></i>
-								%p
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Roll a ball
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/rollaball.png"}
+									.mc-description
+										%span Lenguaje: <b> Unity(C#) </b></br>Minijuego consiste en comer cuadritos con una pelotita
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
 									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title TablaVerdad <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Java </b>
-								%p Interfaz que genera tabla de verdad a partir de premisas ingresadas
-					.col.s12.m3
-						.card.waves-effect.waves-teal
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/rollaball.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator Roll a ball <i class = "right fa fa-angle-double-up"></i>
-								%p
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Mi Nómina
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/nomina.png"}
+									.mc-description
+										%span Lenguaje: <b> Java </b></br> [Experimental] Interfaz para llevar el control de pagos de nómina
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
 									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title Roll a ball <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Unity(C#) </b>
-								%p Minijuego consiste en comer cuadritos con una pelotita
-					.col.s12.m3
-						.card.waves-effect.waves-teal
-							.card-image.container.waves-effect.waves-teal
-								%img.activator{:src => "images/nomina.png", :alt => ""}/
-							.card-content
-								%span.card-title.activator MiNómina <i class = "right fa fa-angle-double-up"></i>
-								%p
-									%a{:href => ""} Ver más
-							.card-reveal
-								%span.card-title MiNómina <i class = "right fa fa-angle-double-down"></i>
-								%p Lenguaje: <b> Java </b>
-								%p [Experimental] Interfaz para llevar el control de pagos de nómina
 		#contact
-			%h2.center  <i class = "fa fa-whatsapp"></i> Contacto
+			%h3.center  <i class = "fa fa-whatsapp"></i> Contacto
 			.row.contact
 				.col.m4.s12.offset-m4
 					.row
