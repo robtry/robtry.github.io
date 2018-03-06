@@ -13,24 +13,26 @@
 		%link{rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css", media: "screen,projection"}/
 		%link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}/
 		%link{rel:"stylesheet", href:"css/styles.css"}/
+		%link{:rel => "stylesheet", :href => "css/style-cards.css"}/
 		%title Roberto Gervacio
 	%body
 		#home.block
-			%nav
-				.nav-wrapper.container
-					%ul.left
-						%li
-							%a.icon-size-nav{:href => "https://github.com/robtry", :target => "_blank"} <i class="fa fa-github"></i>
-						%li
-							%a.brand-logo.to-home{:href => "#home"} Roberto
-					%ul.right.hide-on-med-and-down#nav-mobile-1
-						%li
-							%a.to-skills{:href => "#skills"} Habilidades
-						%li
-							%a.to-projects{:href => "#projects"} Proyectos
-						%li
-							%a.to-contact{:href => "#contact"} Contacto
-			#particles.particles-main
+			.index-first
+				#particles
+				%nav
+					.nav-wrapper.container
+						%ul.left
+							%li
+								%a.icon-size-nav{:href => "https://github.com/robtry", :target => "_blank"} <i class="fa fa-github"></i>
+							%li
+								%a.brand-logo.to-home{:href => "#home"} Roberto
+						%ul.right.hide-on-med-and-down#nav-mobile-1
+							%li
+								%a.to-skills{:href => "#skills"} Habilidades
+							%li
+								%a.to-projects{:href => "#projects"} Proyectos
+							%li
+								%a.to-contact{:href => "#contact"} Contacto
 				%h1#intro-title Roberto
 				%p#intro-paragraph.flow-text ¡Hola! soy Roberto Gervacio, futuro Ingeniero en Tecnologías de Cómputo. Tengo experiencia en desarrollo Frontend, Backend, de Aplicaciones Nativas y Web. Puedes ver mis proyectos
 		#skills
@@ -67,6 +69,24 @@
 		#projects
 			%h2.center <i class="fa fa-folder-open"></i> Proyectos
 			.container
+				-# .row.center
+				-# 	.col.s12.m6.l4
+				-# 		.team
+				-# 			%article.material-card
+				-# 				%h2.blue
+				-# 					%span.truncate Roberto Gervacio
+				-# 					%strong.truncate.mc-title
+				-# 						%span.trun  FullStack
+				-# 				.mc-content.blue.lighten-1
+				-# 					.img-container
+				-# 						%img.responsive-img.white{src:"images/login/roberto.jpg"}
+				-# 					.mc-description.white-text
+				-# 						%span Futuro ingeniero en tecnologías de cómputo, apasionado por Linux y el código libre
+				-# 				%a.mc-btn-action.blue.lighten-2.z-depth-3.hoverable
+				-# 					%i.material-icons menu
+				-# 				.mc-footer.blue.lighten-3
+				-# 					%a.center-align.blue.lighten-1{href:"https://github.com/robtry", target:"_blank"}
+				-# 						%img{src:"images/login/git.png"}
 				.row.center
 					.col.s12.m3.offset-m3
 						.card

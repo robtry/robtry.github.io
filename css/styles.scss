@@ -13,6 +13,21 @@ html, body, .block {
 	font-size: 2.3em;
 }
 
+.index-first {
+	overflow: hidden;
+	position: relative;
+	min-height: 100vh;
+	z-index: 20;
+	
+	#particles {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	background:  rgb(34, 77, 170); // color fondo de las particulas
+	}
+}
+
 nav
 {
 	background: transparent;
@@ -21,24 +36,12 @@ nav
 	z-index: 30;
 	box-shadow: none;
 }
-.particles-main
-{
-	width: 100vw;
-	height: 100vh;
-}
+
 .particles-pinned
 {
 	position: fixed !important;
 	top: calc(-100vh + 64px) !important;
 	bottom: initial !important;
-}
-
-#particles {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	//position: relative;
-	background:  rgba(34, 77, 170,0.9); // color fondo de las particulas
 }
 
 #intro-title {
@@ -103,11 +106,13 @@ nav
 }
 
 #projects{
-	background:  rgba(34, 77, 170,1); /// azul de particulas
-	color: white;
+	background: #8DA7DF; // azul de particulas
+	//color: white;
 	padding-top: 60px;
 	padding-bottom: 80px;
 }
+
+
 #contact{
 	padding-top: 150px;
 	padding-bottom: 80px;
