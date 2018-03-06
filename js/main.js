@@ -49,4 +49,6 @@ $(document).ready(function(){
 			//console.log("unactive");
 		}
 	});
+
+	$('.tooltipped').tooltip({delay: 50});
 });
