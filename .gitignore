@@ -1,2 +1,4 @@
 #config de prepros
 *.config
+
+.DS_store
